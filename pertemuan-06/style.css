@@ -210,7 +210,6 @@ footer {
   text-align: left;
 }
 
-/* Efek bubble (tooltip) tanpa warna */
 .tooltip {
   position: relative;
   display: inline-block;
@@ -325,7 +324,6 @@ hr {
     width:100%;
   }
 
-  /* Tambahan untuk #ipk di mobile */
   #ipk {
     padding: 16px;
   }
