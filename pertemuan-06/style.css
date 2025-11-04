@@ -165,6 +165,98 @@ footer {
   padding: 10px;
 }
 
+/* Tambahan untuk section#ipk */
+#ipk {
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#ipk h2 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.matkul-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.matkul-table td {
+  padding: 10px;
+  border: none;
+}
+
+.matkul-table td:first-child {
+  text-align: right;
+  font-weight: bold;
+  width: 200px;
+}
+
+.matkul-table td:nth-child(2) {
+  text-align: center;
+  width: 20px;
+}
+
+.matkul-table td:last-child {
+  text-align: left;
+}
+
+/* Efek bubble (tooltip) tanpa warna */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+}
+
 @media (max-width: 600px) {
 
   header {
@@ -231,5 +323,23 @@ footer {
   #contact textarea,
   #contact button {
     width:100%;
-}
+  }
+
+  /* Tambahan untuk #ipk di mobile */
+  #ipk {
+    padding: 16px;
+  }
+
+  .matkul-table {
+    font-size: 14px;
+  }
+
+  .matkul-table td:first-child {
+    width: 150px;
+  }
+
+  .tooltip .tooltiptext {
+    width: 150px;
+    margin-left: -75px;
+  }
 }
