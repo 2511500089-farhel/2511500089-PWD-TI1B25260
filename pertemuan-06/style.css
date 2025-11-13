@@ -76,7 +76,6 @@ header li a:active {
   margin: 20px auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 #home h2,
 #about h2,
 #contact h2 {
@@ -86,7 +85,7 @@ header li a:active {
   margin-top: 0;
   margin-bottom: 16px;
 }
-
+sd
 #home p {
   text-align: justify;
 }
@@ -154,7 +153,7 @@ header li a:active {
 }
 
 #contact button[type="reset"]:hover {
-  background-color: #cccccc;
+  background-color: #8b4d4d;
   transform: translateY(-1px);
 }
 
@@ -165,7 +164,6 @@ footer {
   padding: 10px;
 }
 
-/* Tambahan untuk section#ipk */
 #ipk {
   border-radius: 10px;
   padding: 20px;
@@ -210,7 +208,6 @@ footer {
   text-align: left;
 }
 
-/* Efek bubble (tooltip) tanpa warna */
 .tooltip {
   position: relative;
   display: inline-block;
@@ -325,7 +322,6 @@ hr {
     width:100%;
   }
 
-  /* Tambahan untuk #ipk di mobile */
   #ipk {
     padding: 16px;
   }
