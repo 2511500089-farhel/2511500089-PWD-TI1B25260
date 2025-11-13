@@ -111,6 +111,10 @@
             $nilaiUTS5 = 90;
             $nilaiUAS5 = 100;
 
+<<<<<<< HEAD
+=======
+            
+>>>>>>> a435a25e94aeed3dbf405aa94237ce573766e38e
             function hitungNilai($hadir, $tugas, $uts, $uas, $sks) {
                 $nilaiAkhir = (0.1 * $hadir) + (0.2 * $tugas) + (0.3 * $uts) + (0.4 * $uas);
                 if ($hadir < 70) {
@@ -154,12 +158,20 @@
             list($nilaiAkhir4, $grade4, $mutu4, $bobot4, $status4) = hitungNilai($nilaiHadir4, $nilaiTugas4, $nilaiUTS4, $nilaiUAS4, $sksMatkul4);
             list($nilaiAkhir5, $grade5, $mutu5, $bobot5, $status5) = hitungNilai($nilaiHadir5, $nilaiTugas5, $nilaiUTS5, $nilaiUAS5, $sksMatkul5);
 
+<<<<<<< HEAD
            
+=======
+
+>>>>>>> a435a25e94aeed3dbf405aa94237ce573766e38e
             $totalBobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
             $totalSKS = $sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5;
             $IPK = $totalSKS > 0 ? $totalBobot / $totalSKS : 0;
 
+<<<<<<< HEAD
            
+=======
+        
+>>>>>>> a435a25e94aeed3dbf405aa94237ce573766e38e
             function tampilMatkul($nama, $sks, $hadir, $tugas, $uts, $uas, $akhir, $grade, $mutu, $bobot, $status) {
                 echo "<table class='matkul-table'>";
                 echo "<tr><td>Nama Matakuliah</td><td>:</td><td>$nama</td></tr>";
